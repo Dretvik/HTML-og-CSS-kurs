@@ -1,0 +1,28 @@
+body {
+  font-family: 'Courgette', cursive;
+  background: #2e2e2e;
+  color: orange;
+  margin: 0;
+}
+#meny {
+  background-color: red;
+}
+#topp {
+  background-color: green;
+}
+#content{
+  background-color: blue;
+}
+#sidebar{
+  background-color: yellow;
+}
+#right{
+  background-color: pink;
+}
+#bunntekst{
+  background-color: indigo;
+}
+
+#meny, #topp,#content,#sidebar,#right,#bunntekst {
+  padding: 20px;
+}
