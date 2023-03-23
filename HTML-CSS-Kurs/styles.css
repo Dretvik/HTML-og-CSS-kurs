@@ -1,0 +1,56 @@
+/* her inne er det kun lov med CSS, ikke HTML */
+
+h1, h2, h3, h4 {
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  color: red;
+}
+h1 {
+  color:blue;
+  font-size: 500%;
+  position:relative;
+  left:40%;
+/*  font-family: 'Edu NSW ACT Foundation', cursive;*/
+}
+h2 {
+  /*font-family: 'Edu NSW ACT Foundation', cursive;*/
+  font-size:300%;
+  position:relative;
+}
+/* formater avsnitt og lister*/
+p, li {
+  width: 600px;
+  color:purple;
+}
+/* Class*/
+.uthevet{
+  color:darkred;
+  font-weight: bold;
+}
+/* Plassere innhold til høyre eller venstre */
+.pull-left{
+  float: left;
+  margin-right: 20px;
+}
+.pull-right {
+  float:right;
+  margin-left: 20px;
+}
+/* Linker */
+/* Standard linker - før vi klikker*/
+a:link {
+  color:red;
+  font-weight: bolder;
+  text-decoration: none;
+}
+/* Besøkte linker */
+a:visited{
+  color: green;
+  font-weight: bolder;
+  cursor: pointer;
+}
+/*mouse over, samt fokus/aktiv når man navigerer med tastatur*/
+a:hover, a:focus, a:active {
+  color:pink;
+  font-weight: bolder;
+  text-decoration: underline;
+}

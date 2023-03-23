@@ -1,0 +1,91 @@
+<!Doctype html>
+<html lang="no">
+    <head>
+      <meta name="author" content="Dretvik">
+      <meta name="description" content="Kurs i HTML og CSS">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--
+      CSS - Cascading Style Sheets
+
+            Formatering, utseende, layout, plassering, pynt
+
+            Regel, selector, stil, style, styling - alt er det samme..
+
+            Vi kan lagre stiler på 3 forskjellige måter:
+            - inline - direkte på html-taggen i html dokumentet (IKKE BRUK DETTE!)
+            - interne stiler - I head i HTML-dokumentet - Kun tilgengelig for det dokumentet de ligger i.
+            - eksterne stiler - i egen CSS fil - kan kobles til alle sidene på nettsiden.
+
+            Type stiler/regler/selector:
+
+            Tag stiler:
+            - formaterer en bestemt HTML-tag
+            - MÅ ha samme navn som taggen, UTEN klammer.
+            - brukes automatisk
+
+            Class:
+            - egendefinert stile
+            - du bestemmer navnet på stilen selv
+            - navnet MÅ starte med punktum
+            - kan brukes overalt
+            - kan brukes så mange ganger du vil i hvert dokument
+            - Manuell!
+
+            Id
+
+            Compound:
+            - sammensatte stiler
+            - f.eks. ved å bruke komma som betyr OG
+
+      -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@700&display=swap" rel="stylesheet">
+
+      <!-- ekstern CSS -->
+      <link rel="stylesheet" href="../styles.css">
+        <!-- et område for interne stiler - CSS -->
+        <style></style>
+
+      <title> Kontakt </title>
+    </head>
+    <body>
+      <!-- inline styling - IKKE BRUK -->
+    <!--  <h1 style="color:orange;">Kontakt oss</h1> -->
+      <h1>Kontakt oss </h1>
+      <h2>Du kan kontakte oss på flere måter: </h2>
+      <p class="uthevet">
+        <img src="../bilder/blue-city.jpg" alt="Bilde av en by i med tordenvær. Foto." class="pull-left" width="465px">
+        Dette er et avsnitt og her står det mye forskjellig som er mer eller mindre interessant.
+        Et avsnitt , som vi husker fra i går, bør ikke være så langt,
+        kanskje 4-5 lijer, og det bør heller ikke være for bredt. Ca 600px er fint. </p>
+      <p>Dette er et avsnitt og her står det mye forskjellig som er <span class="uthevet">mer eller mindre</span> interessant.
+        Et avsnitt , som vi husker fra i går, bør ikke være så langt,
+        kanskje 4-5 lijer, og det bør heller ikke være for bredt. Ca 600px er fint. </p>
+        <h3>Din favorittdag er? </h3>
+        <ul>
+            <li>Onsdag</li>
+            <li>Torsdag</li>
+            <li>Fredag</li>
+        </ul>
+      <!-- Dokument relativ link - tar utgangspunkt i dokumentet du står i og kalkulerer banen derifra. -->
+      <a href="../index.html">Tilbake til forsiden</a>
+      <!-- Site root relative linker -->
+      <a href="/index.html">Til forsiden</a>
+      <!-- epost -->
+      <a href="mailto:haa@qross.no">haa@qross.no</a>
+      <!-- telefon -->
+      <a href="tel:22070090">22 07 00 90</a>
+      <!-- kart -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.4057701710826!2d10.635293751769945!3d59.
+      442984708856685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46414d72775dee07%3A0x5830142c11af4a8!
+      2sRambergveien%2027%2C%201513%20Moss!5e0!3m2!1sno!2sno!4v1679402718254!5m2!1sno!2sno"
+       width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       <!-- eksterne lenker - åpne i ny fane -->
+       <a href="https://www.google.no/" target="_blank">Gå til Google</a>
+
+       <!-- Putt Javascript filer rett før body slutter-->
+
+    </body>
+</html>
