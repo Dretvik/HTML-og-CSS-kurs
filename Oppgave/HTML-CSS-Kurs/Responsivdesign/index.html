@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <!-- Denne MÅ være med for at siden skal skalere på mobil. Hvis ikke
+  fngerer ikke den responsive siden som den skal på mobil, kun desktop! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiv design er tuft!</title>
+    <meta name="description" content="Dette er en beskrivelse av innholdet i dokumentet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+    </style>
+  </head>
+  <body>
+
+<!-- hva er en tag? instruks/kommando som forteller nettleser hva innholdet er.
+    hva er et attributt? egenskap med en verdi.
+     To atributter dere kommer til å bruke mye er: id og class
+
+    CSS:
+    - (inline), intern, ekstern
+    - type stiler:
+      - tag
+      - class
+      - ID
+      - Compound
+
+      "bokser"
+
+    Tradisjonelt var det kun 1 boks, den heter <div></div>
+    i HTML5 har vi fått introdusert fler typer bokser.
+    De fungerer helt likt som div, men gir mer mening til innholdet.
+    main, header, aticle, section, aside, footer, nav, div
+    Block-elementer: bruker hele bredden som er tilgjengelig...
+    Box modellen: width+margin+padding+border=bredde
+
+    500px
+    10px marg
+    20px padding
+    2px border
+    = 564px
+
+    ID:
+    -Egendefinert stil
+    - bestemmer navn selv
+    - Må starte med #
+    - UNIK - Kan kun brukes 1 gang per html dokument
+
+    Responsiv design:
+      Hva er viktig?
+      poenget: lever SAMME side til alle brukere, uavhengig av type enhet de bruker!
+      Noen viktige ting å tenke på når du lager responsiv design:
+        - Skalering
+        - Bokser: hvilke bokser trenger vi/hvordan plasseres de?
+        - Planlegging - som et minimum - skisser
+        - Bilder - hvordan sørge for at bilder skal passe på alle skjermer?
+        - Meny - utrfording på en responsiv side...
+        - Det kan forekomme "småting" som kun skal vises på visse skjermstørrelser.
+        - Testing
+        - Media queries
+        - prosent: lag layouten i prosent for at de skal skalere på tvers av alle enheter.
+
+
+    -->
+
+    <nav id="meny">
+      <div class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Forside</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Produkter</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../om-oss.html">Om Oss</a></li>
+                  <li><a class="dropdown-item" href="../Kontakt/index.html">Kontakt Oss</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header id="topp">Banner</header>
+    <main>
+      <div id="sidebar"><img src="../bilder/thunderstorm.jpg" alt="Foto. Tordenvær over en by." width="1920"></div>
+
+      <article id="content">
+        <h1>Overskrift</h1>
+        <h2>Mellomtittel</h2>
+        <p>Dette er et avsnitt som handler om responsiv design.
+        Responsiv design er en teknikk for å skape nettsider som skalerer på tvers av skjermstørrelser
+      og enheter.</p>
+      <p>Bacon ipsum dolor amet ribeye tail shank pastrami ground round shoulder strip steak spare ribs tri-tip pork chop ball tip biltong pork boudin beef.
+         Beef spare ribs cow boudin, bacon shankle turducken ribeye sausage ground round. Venison swine prosciutto tongue, doner pork loin pork chop short
+          ribs meatloaf shoulder strip steak buffalo pork belly hamburger pastrami.
+          Andouille prosciutto ham pork.
+         Turkey landjaeger pork chop drumstick, tongue spare ribs turducken pancetta.
+          Salami picanha shoulder, boudin filet mignon short loin cupim ham hock tri-tip landjaeger.</p>
+          <p>Bacon ipsum dolor amet ribeye tail shank pastrami ground round shoulder strip steak spare ribs tri-tip pork chop ball tip biltong pork boudin beef.
+             Beef spare ribs cow boudin, bacon shankle turducken ribeye sausage ground round. Venison swine prosciutto tongue, doner pork loin pork chop short
+              ribs meatloaf shoulder strip steak buffalo pork belly hamburger pastrami.
+              Andouille prosciutto ham pork.
+             Turkey landjaeger pork chop drumstick, tongue spare ribs turducken pancetta.
+              Salami picanha shoulder, boudin filet mignon short loin cupim ham hock tri-tip landjaeger.</p>
+              <p>Bacon ipsum dolor amet ribeye tail shank pastrami ground round shoulder strip steak spare ribs tri-tip pork chop ball tip biltong pork boudin beef.
+                 Beef spare ribs cow boudin, bacon shankle turducken ribeye sausage ground round. Venison swine prosciutto tongue, doner pork loin pork chop short
+                  ribs meatloaf shoulder strip steak buffalo pork belly hamburger pastrami.
+                  Andouille prosciutto ham pork.
+                 Turkey landjaeger pork chop drumstick, tongue spare ribs turducken pancetta.
+                  Salami picanha shoulder, boudin filet mignon short loin cupim ham hock tri-tip landjaeger.</p>
+      </article>
+      <aside id="right">Right</aside>
+    </main>
+    <footer id="bunntekst">
+      <p>Copyright &copy; 2023</p>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+crossorigin="anonymous"></script>
+  </body>
+</html>
